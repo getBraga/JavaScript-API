@@ -22,6 +22,12 @@ body {
   margin-top: 160px;
 }
 
+@media(max-width: 650px)  {
+  .main {
+    margin-top: 60px;
+  }
+
+}
 .main h1 {
   font-size: 2em;
   color: #cecece;
@@ -43,7 +49,7 @@ body {
   max-width: 650px;
   height: 510px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,9 +112,6 @@ body {
     height: 450px;
     width: 90%;
   }
-  .main .img img {
-   
-  }
 }
 
 .div-a{
@@ -152,7 +155,6 @@ input {
   margin-left: 60px;
   margin-top: 5px;
   background:  #cecece;
- 
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .9);
 
 }
@@ -182,3 +184,22 @@ label {
   }
  
 }
+
+@media(max-width: 650px)  {
+  .form h1 {
+    font-size: 1em;
+  }
+  input {
+    margin-left: 10px;
+  }
+  label {
+    margin-left: 10px;
+  }
+}
+@media  (min-width: 651px) and (max-width: 800px) {
+  .form h1 {
+      font-size: 1.1em;
+  }
+ 
+}
+
