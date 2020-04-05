@@ -46,8 +46,8 @@ body {
 }
 .main .img {
   background-color:  #cecece;
-  max-width: 650px;
-  height: 510px;
+  width: 500px;
+  height: 400px;
   margin: 0 auto;
   margin-top: 40px;
   display: flex;
@@ -58,6 +58,18 @@ body {
 .main .img  img {
   width: 100%;
   height: 100%;
+  animation: animaImg 3s forwards;
+}
+
+@keyframes animaImg {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .load { 
@@ -99,18 +111,15 @@ body {
     font-size: 1em;
 }
   .main .img{
-   width: 95%;
-    height: 95%;
+    width: 300px;
+    height: 250px;
+   
   }
  
 }
 @media  (min-width: 651px) and (max-width: 800px) {
   .main h1 {
       font-size: 1.1em;
-  }
-  .main .img{
-    height: 450px;
-    width: 90%;
   }
 }
 
@@ -136,7 +145,10 @@ body {
 .div-a .mudar-img:active {
   transform: translateY(4px);
 }
-
+.form h1 {
+  margin-bottom: 60px;
+  font-size: 2em;
+}
 .form {
   display: block;
   margin: 0 auto;
@@ -144,10 +156,7 @@ body {
   text-align: center;
   color:  #cecece;
 }
-.form h1 {
-  margin-bottom: 60px;
-  font-size: 2em;
-}
+
 input {
   display: block;
   width: 300px;
@@ -168,6 +177,20 @@ label {
   font-size: 1.5em;
 
 }
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .9s;
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+ 
+}
+
+
+
 #btn {
   width: 80px;
   margin-top: 10px;
